@@ -15,6 +15,12 @@ class _WebViewContainerState extends State<WebViewContainer> {
   final _key = UniqueKey();
   _WebViewContainerState(this._url, this._title);
   @override
+  void initState() {
+    print(_title);
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
